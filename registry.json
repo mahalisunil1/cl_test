@@ -1,5 +1,7 @@
 {
-  "components": [],
+  "components": [
+    "card"
+  ],
   "templates": [],
   "tokens": [
     "tokens"
@@ -7,5 +9,22 @@
   "utils": [
     "utils"
   ],
-  "meta": {}
+  "meta": {
+    "card": {
+      "title": "Profile stats card",
+      "description": "Soft profile card with tags, stats, and CTA.",
+      "author": {
+        "name": "sunil"
+      },
+      "tags": [
+        "profile",
+        "card",
+        "stats",
+        "cta",
+        "ui"
+      ],
+      "status": "stable",
+      "kind": "component"
+    }
+  }
 }

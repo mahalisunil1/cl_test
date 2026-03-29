@@ -1,5 +1,5 @@
-﻿import * as React from "react"
-import { cn } from "@sunil/utils"
+import * as React from "react"
+import { cn } from "@mahalisunil1/utils"
 {{animationImport}}
 
 {{variantTypeDecl}}
@@ -11,8 +11,7 @@ export type {{componentNamePascal}}Props = React.HTMLAttributes<HTMLDivElement> 
 {{variantClasses}}
 
 export function {{componentNamePascal}}({
-  className,
-  children{{variantDefaults}},
+  className{{variantDefaults}},
   ...props
 }: {{componentNamePascal}}Props) {
   const localRef = React.useRef<HTMLDivElement | null>(null)
@@ -31,9 +30,6 @@ export function {{componentNamePascal}}({
         className
       )}
       {...props}
-    >
-      {children}
-    </div>
+    />
   )
 }
-

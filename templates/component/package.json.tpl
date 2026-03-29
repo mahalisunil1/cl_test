@@ -1,5 +1,5 @@
 {
-  "name": "@mahalisunil1/{{name}}",
+  "name": "@mahalisunil1/{{packageName}}",
   "version": "0.0.1",
   "private": false,
   "main": "./dist/index.mjs",
