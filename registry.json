@@ -1,6 +1,7 @@
 ﻿{
     "components":  [
-                       "card"
+                       "card",
+                       "navbar"
                    ],
     "templates":  [
 
@@ -27,6 +28,18 @@
                                        ],
                               "status":  "stable",
                               "kind":  "component"
-                          }
+                          },
+                 "navbar":  {
+                                "title":  "Navbar",
+                                "description":  "",
+                                "author":  {
+                                               "name":  "unknown"
+                                           },
+                                "tags":  [
+
+                                         ],
+                                "status":  "draft",
+                                "kind":  "component"
+                            }
              }
 }
