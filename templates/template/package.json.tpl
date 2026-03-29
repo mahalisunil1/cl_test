@@ -2,12 +2,12 @@
   "name": "@mahalisunil1/{{name}}",
   "version": "0.0.1",
   "private": false,
-  "main": "./dist/index.js",
-  "types": "./dist/index.d.ts",
+  "main": "./dist/index.mjs",
+  "types": "./dist/index.d.mts",
   "exports": {
     ".": {
-      "types": "./dist/index.d.ts",
-      "default": "./dist/index.js"
+      "types": "./dist/index.d.mts",
+      "default": "./dist/index.mjs"
     }
   },
   "files": [
