@@ -1,6 +1,6 @@
 {
   "name": "@mahalisunil1/card",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "private": false,
   "main": "./src/index.ts",
   "types": "./src/index.ts",
@@ -39,5 +39,3 @@
     "@mahalisunil1/utils": "workspace:*"
   }
 }
-
-
