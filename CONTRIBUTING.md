@@ -7,13 +7,13 @@ Thanks for helping improve Components Layer.
 1. Scaffold a component with the script:
 
 ```bash
-pwsh scripts/create-component.ps1 -Name <kebab-name> -Type component -Variants -Animation
+node scripts/create-component.mjs --name <kebab-name> --type component --variants --animation
 ```
 
 2. Scaffold a template (if needed):
 
 ```bash
-pwsh scripts/create-template.ps1 -Name <kebab-name>
+node scripts/create-template.mjs --name <kebab-name>
 ```
 
 3. Add or update `registry.json` metadata for the new package.

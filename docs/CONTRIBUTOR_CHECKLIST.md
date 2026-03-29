@@ -3,8 +3,8 @@
 Use this as the quick path for new components.
 
 1. Scaffold
-   - `pwsh scripts/create-component.ps1 -Name <kebab-name> -Type component -Variants -Animation`
-   - `pwsh scripts/create-template.ps1 -Name <kebab-name>` (for templates)
+   - `node scripts/create-component.mjs --name <kebab-name> --type component --variants --animation`
+   - `node scripts/create-template.mjs --name <kebab-name>` (for templates)
 2. Metadata
    - Add `registry.json` meta: `title`, `description`, `tags`, `status`, `kind`
 3. Preview

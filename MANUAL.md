@@ -74,13 +74,13 @@ Config: `apps/docs/tailwind.config.ts`
 ### Create a Component
 
 ```bash
-pwsh scripts/create-component.ps1 -Name card -Type component -Variants -Animation
+node scripts/create-component.mjs --name card --type component --variants --animation
 ```
 
 ### Create a Template
 
 ```bash
-pwsh scripts/create-template.ps1 -Name hero-section
+node scripts/create-template.mjs --name hero-section
 ```
 
 Then update `registry.json` metadata and start the docs app.

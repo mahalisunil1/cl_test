@@ -15,7 +15,7 @@ This repo uses a minimal script-based scaffolder. Use these workflows + scripts.
 1. Run the scaffold script:
 
 ```bash
-pwsh scripts/create-component.ps1 -Name card -Type component -Variants -Animation
+node scripts/create-component.mjs --name card --type component --variants --animation
 ```
 
 2. Install package deps (if needed):
@@ -56,5 +56,5 @@ http://localhost:5173/?preview=<name>
 ## 5) Create a Template Package
 
 ```bash
-pwsh scripts/create-template.ps1 -Name hero-section
+node scripts/create-template.mjs --name hero-section
 ```

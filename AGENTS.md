@@ -15,8 +15,8 @@ directly to component packages.
 
 ## Expected Workflow
 
-1. Scaffold a component: `pwsh scripts/create-component.ps1 -Name <name> -Type component -Variants -Animation`
-2. Scaffold a template (if needed): `pwsh scripts/create-template.ps1 -Name <name>`
+1. Scaffold a component: `node scripts/create-component.mjs --name <name> --type component --variants --animation`
+2. Scaffold a template (if needed): `node scripts/create-template.mjs --name <name>`
 3. Start docs preview immediately after scaffolding: `pnpm dev:docs`
 4. Add a changeset: `pnpm changeset`
 5. Commit and push
