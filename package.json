@@ -15,6 +15,7 @@
     "validate:registry": "node scripts/validate-registry.mjs",
     "check:changeset": "node scripts/check-changeset.mjs",
     "build:registry": "node scripts/build-registry.mjs",
+    "switch:scope": "node scripts/switch-scope.mjs",
     "release:check": "pnpm build:packages && pnpm typecheck:packages && pnpm validate:registry",
     "changeset": "changeset",
     "version": "changeset version",
