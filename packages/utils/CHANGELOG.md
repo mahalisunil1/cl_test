@@ -1,5 +1,11 @@
 # @mahalisunil1/utils
 
+## 0.0.4
+
+### Patch Changes
+
+- a134d4a: Fix published ESM and types entrypoints to match tsup output.
+
 ## 0.0.3
 
 ### Patch Changes
