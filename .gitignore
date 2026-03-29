@@ -1,0 +1,23 @@
+node_modules/
+dist/
+*.log
+.DS_Store
+
+# build artifacts
+**/dist/
+**/.turbo/
+**/.cache/
+
+# local env
+.env
+.env.*
+
+# pnpm
+.pnpm-debug.log
+
+# ts
+*.tsbuildinfo
+
+# editors
+.vscode/
+.idea/

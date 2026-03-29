@@ -1,0 +1,52 @@
+name: CI
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup pnpm
+        uses: pnpm/action-setup@v4
+        with:
+          version: 10.32.1
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: pnpm
+
+      - name: Install
+        run: pnpm install
+
+      - name: Check changeset (PR only)
+        if: github.event_name == 'pull_request'
+        run: pnpm check:changeset
+
+      - name: Build packages
+        run: pnpm build:packages
+
+      - name: Typecheck packages
+        run: pnpm typecheck:packages
+
+      - name: Validate registry metadata
+        run: pnpm validate:registry
+
+      - name: Build docs
+        run: pnpm --filter docs build
+
+      - name: Build registry artifact
+        run: pnpm build:registry
+
+      - name: Upload registry artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: registry
+          path: dist/registry.json

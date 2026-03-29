@@ -1,0 +1,32 @@
+﻿{
+    "components":  [
+                       "card"
+                   ],
+    "templates":  [
+
+                  ],
+    "tokens":  [
+                   "tokens"
+               ],
+    "utils":  [
+                  "utils"
+              ],
+    "meta":  {
+                 "card":  {
+                              "title":  "finance-card",
+                              "description":  "Compact budget summary card with progress and CTA.",
+                              "author":  {
+                                             "name":  "sunil"
+                                         },
+                              "tags":  [
+                                           "finance",
+                                           "budget",
+                                           "card",
+                                           "progress",
+                                           "cta"
+                                       ],
+                              "status":  "stable",
+                              "kind":  "component"
+                          }
+             }
+}
