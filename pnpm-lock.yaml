@@ -85,7 +85,7 @@ importers:
         specifier: ^3.13.0
         version: 3.14.2
 
-  packages/sample-card:
+  packages/card:
     dependencies:
       '@components-layer/animation':
         specifier: workspace:*
@@ -106,8 +106,17 @@ importers:
         specifier: ^3 || ^4
         version: 4.2.2
 
-  packages/sample-hero:
+  packages/navbar:
     dependencies:
+      '@components-layer/animation':
+        specifier: workspace:*
+        version: link:../animation
+      '@components-layer/tokens':
+        specifier: workspace:*
+        version: link:../tokens
+      '@components-layer/utils':
+        specifier: workspace:*
+        version: link:../utils
       react:
         specifier: ^18 || ^19
         version: 19.2.4
