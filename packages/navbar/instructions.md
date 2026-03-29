@@ -3,7 +3,7 @@
 ## Usage
 
 ```tsx
-import { Navbar } from "@sunil/navbar"
+import { Navbar } from "@mahalisunil1/navbar"
 
 <Navbar
   brand={{ label: "Studio", href: "/" }}

@@ -9,12 +9,12 @@ const getArg = (name, fallback) => {
   return val ?? fallback;
 };
 
-const fromScope = getArg("--from", "@sunil");
+const fromScope = getArg("--from", "@mahalisunil1");
 const toScope = getArg("--to", "@components-layer");
 const dryRun = args.includes("--dry");
 
 if (!fromScope.startsWith("@") || !toScope.startsWith("@")) {
-  console.error("Scopes must start with '@'. Example: --from @sunil --to @components-layer");
+  console.error("Scopes must start with '@'. Example: --from @mahalisunil1 --to @components-layer");
   process.exit(1);
 }
 

@@ -6,7 +6,7 @@
     "moduleResolution": "bundler",
     "baseUrl": ".",
     "paths": {
-      "@sunil/*": ["packages/*/src"]
+      "@mahalisunil1/*": ["packages/*/src"]
     },
     "strict": true,
     "declaration": true,

@@ -9,7 +9,7 @@
     "skipLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "@sunil/*": [
+      "@mahalisunil1/*": [
         "../../packages/*/src"
       ]
     },

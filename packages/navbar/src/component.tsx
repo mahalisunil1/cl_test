@@ -1,6 +1,6 @@
 ﻿import * as React from "react"
-import { cn } from "@sunil/utils"
-import { gsap, createTimeline } from "@sunil/animation"
+import { cn } from "@mahalisunil1/utils"
+import { gsap, createTimeline } from "@mahalisunil1/animation"
 
 export type MegaMenuLink = {
   label: string

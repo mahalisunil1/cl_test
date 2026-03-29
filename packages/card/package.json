@@ -1,5 +1,5 @@
 {
-  "name": "@sunil/card",
+  "name": "@mahalisunil1/card",
   "version": "0.0.1",
   "private": false,
   "main": "./src/index.ts",
@@ -34,9 +34,9 @@
     "tailwindcss": "^3 || ^4"
   },
   "dependencies": {
-    "@sunil/animation": "workspace:*",
-    "@sunil/tokens": "workspace:*",
-    "@sunil/utils": "workspace:*"
+    "@mahalisunil1/animation": "workspace:*",
+    "@mahalisunil1/tokens": "workspace:*",
+    "@mahalisunil1/utils": "workspace:*"
   }
 }
 

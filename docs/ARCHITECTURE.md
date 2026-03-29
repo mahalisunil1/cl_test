@@ -62,7 +62,7 @@ http://localhost:5173/?preview=<name>
 
 Docs uses **source** via Vite alias:
 ```
-@sunil/* -> packages/*/src
+@mahalisunil1/* -> packages/*/src
 ```
 
 ## 6) Versioning
@@ -104,7 +104,7 @@ On merge to `main`, Release workflow:
 
 Consumers install from npm:
 ```
-npm install @sunil/card
+npm install @mahalisunil1/card
 ```
 
 Published packages use `dist/` (via `publishConfig`).

@@ -54,7 +54,7 @@ const replacements = {
   "{{packageName}}": name,
   "{{componentNamePascal}}": pascal,
   "{{animationImport}}": animation
-    ? 'import { gsap, createTimeline } from "@sunil/animation"'
+    ? 'import { gsap, createTimeline } from "@mahalisunil1/animation"'
     : "",
   "{{animationBlock}}": animation
     ? `    gsap.set(localRef.current, { opacity: 0, y: 10 })

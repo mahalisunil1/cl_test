@@ -43,7 +43,7 @@ CI will fail if package or registry changes are made without a changeset.
 ## Rules
 
 - Do not add forbidden deps to component packages.
-- Only import animation from `@sunil/animation`.
+- Only import animation from `@mahalisunil1/animation`.
 - React and Tailwind must remain peerDependencies in components.
 - Keep packages small and focused.
 - Ensure `registry.json` metadata exists (title, description, tags, status, kind).

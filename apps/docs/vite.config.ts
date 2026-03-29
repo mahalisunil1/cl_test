@@ -13,7 +13,7 @@ export default defineConfig({
   resolve: {
     alias: [
       {
-        find: /^@sunil\/(.*)$/,
+        find: /^@mahalisunil1\/(.*)$/,
         replacement: path.resolve(__dirname, "../../packages/$1/src")
       }
     ]
@@ -30,9 +30,9 @@ export default defineConfig({
   },
   optimizeDeps: {
     exclude: [
-      "@sunil/utils",
-      "@sunil/tokens",
-      "@sunil/animation"
+      "@mahalisunil1/utils",
+      "@mahalisunil1/tokens",
+      "@mahalisunil1/animation"
     ]
   }
 })

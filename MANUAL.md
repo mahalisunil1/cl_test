@@ -50,7 +50,7 @@ If you add new packages, you must run:
 pnpm install
 ```
 
-This refreshes workspace links so TypeScript can resolve `@sunil/*` imports.
+This refreshes workspace links so TypeScript can resolve `@mahalisunil1/*` imports.
 
 ## 4) Docs Playground App
 
@@ -148,7 +148,7 @@ Exports:
 - `fadeIn()`
 - `fadeOut()`
 
-Components should import from `@sunil/animation` rather than `gsap`.
+Components should import from `@mahalisunil1/animation` rather than `gsap`.
 
 ## 10) Templates Package
 
@@ -219,19 +219,19 @@ Changesets automatically converts `workspace:*` ranges to `^version` on publish.
 
 ## 11.1) Package Scope
 
-All packages use the `@sunil/*` scope.
+All packages use the `@mahalisunil1/*` scope.
 
 If you later move to an org scope (e.g. `@components-layer/*`), use the
 scope switch helper script:
 
 ```bash
-pnpm switch:scope -- --from @sunil --to @components-layer
+pnpm switch:scope -- --from @mahalisunil1 --to @components-layer
 ```
 
 Dry run:
 
 ```bash
-pnpm switch:scope -- --from @sunil --to @components-layer --dry
+pnpm switch:scope -- --from @mahalisunil1 --to @components-layer --dry
 ```
 
 ## 15) Contribution Guidelines
@@ -264,7 +264,7 @@ changesets workflow.
 
 ## 17) Common Errors
 
-**Error: Cannot find module @sunil/...**
+**Error: Cannot find module @mahalisunil1/...**
 
 Cause: workspace links not updated after adding packages.
 

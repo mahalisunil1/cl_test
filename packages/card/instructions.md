@@ -3,7 +3,7 @@
 ## Usage
 
 ```tsx
-import { Card } from "@sunil/card"
+import { Card } from "@mahalisunil1/card"
 
 <Card
   title="Monthly Budget"

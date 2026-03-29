@@ -87,13 +87,13 @@ importers:
 
   packages/card:
     dependencies:
-      '@sunil/animation':
+      '@mahalisunil1/animation':
         specifier: workspace:*
         version: link:../animation
-      '@sunil/tokens':
+      '@mahalisunil1/tokens':
         specifier: workspace:*
         version: link:../tokens
-      '@sunil/utils':
+      '@mahalisunil1/utils':
         specifier: workspace:*
         version: link:../utils
       react:
@@ -108,13 +108,13 @@ importers:
 
   packages/navbar:
     dependencies:
-      '@sunil/animation':
+      '@mahalisunil1/animation':
         specifier: workspace:*
         version: link:../animation
-      '@sunil/tokens':
+      '@mahalisunil1/tokens':
         specifier: workspace:*
         version: link:../tokens
-      '@sunil/utils':
+      '@mahalisunil1/utils':
         specifier: workspace:*
         version: link:../utils
       react:
