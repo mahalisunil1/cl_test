@@ -1,4 +1,4 @@
-lockfileVersion: '9.0'
+﻿lockfileVersion: '9.0'
 
 settings:
   autoInstallPeers: true
@@ -87,13 +87,13 @@ importers:
 
   packages/card:
     dependencies:
-      '@components-layer/animation':
+      '@sunil/animation':
         specifier: workspace:*
         version: link:../animation
-      '@components-layer/tokens':
+      '@sunil/tokens':
         specifier: workspace:*
         version: link:../tokens
-      '@components-layer/utils':
+      '@sunil/utils':
         specifier: workspace:*
         version: link:../utils
       react:
@@ -108,13 +108,13 @@ importers:
 
   packages/navbar:
     dependencies:
-      '@components-layer/animation':
+      '@sunil/animation':
         specifier: workspace:*
         version: link:../animation
-      '@components-layer/tokens':
+      '@sunil/tokens':
         specifier: workspace:*
         version: link:../tokens
-      '@components-layer/utils':
+      '@sunil/utils':
         specifier: workspace:*
         version: link:../utils
       react:
@@ -3646,3 +3646,4 @@ snapshots:
       zod: 4.3.6
 
   zod@4.3.6: {}
+

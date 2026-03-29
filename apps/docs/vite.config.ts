@@ -1,4 +1,4 @@
-import { defineConfig } from "vite"
+﻿import { defineConfig } from "vite"
 import react from "@vitejs/plugin-react"
 import tailwindcss from "@tailwindcss/vite"
 import path from "path"
@@ -13,7 +13,7 @@ export default defineConfig({
   resolve: {
     alias: [
       {
-        find: /^@components-layer\/(.*)$/,
+        find: /^@sunil\/(.*)$/,
         replacement: path.resolve(__dirname, "../../packages/$1/src")
       }
     ]
@@ -30,9 +30,10 @@ export default defineConfig({
   },
   optimizeDeps: {
     exclude: [
-      "@components-layer/utils",
-      "@components-layer/tokens",
-      "@components-layer/animation"
+      "@sunil/utils",
+      "@sunil/tokens",
+      "@sunil/animation"
     ]
   }
 })
+

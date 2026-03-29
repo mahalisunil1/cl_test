@@ -1,4 +1,4 @@
-{
+﻿{
   "compilerOptions": {
     "tsBuildInfoFile": "./node_modules/.tmp/tsconfig.app.tsbuildinfo",
     "target": "ES2023",
@@ -9,7 +9,7 @@
     "skipLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "@components-layer/*": [
+      "@sunil/*": [
         "../../packages/*/src"
       ]
     },
@@ -32,3 +32,4 @@
   },
   "include": ["src"]
 }
+

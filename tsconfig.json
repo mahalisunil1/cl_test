@@ -1,4 +1,4 @@
-{
+﻿{
   "compilerOptions": {
     "target": "ES2020",
     "module": "ESNext",
@@ -6,7 +6,7 @@
     "moduleResolution": "bundler",
     "baseUrl": ".",
     "paths": {
-      "@components-layer/*": ["packages/*/src"]
+      "@sunil/*": ["packages/*/src"]
     },
     "strict": true,
     "declaration": true,
@@ -14,3 +14,4 @@
     "skipLibCheck": true
   }
 }
+

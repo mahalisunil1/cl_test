@@ -1,5 +1,6 @@
----
-"@components-layer/card": patch
+﻿---
+"@sunil/card": patch
 ---
 
 Add finance budget card component.
+

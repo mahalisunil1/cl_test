@@ -1,4 +1,4 @@
-# Contributing
+﻿# Contributing
 
 Thanks for helping improve Components Layer.
 
@@ -43,7 +43,7 @@ CI will fail if package or registry changes are made without a changeset.
 ## Rules
 
 - Do not add forbidden deps to component packages.
-- Only import animation from `@components-layer/animation`.
+- Only import animation from `@sunil/animation`.
 - React and Tailwind must remain peerDependencies in components.
 - Keep packages small and focused.
 - Ensure `registry.json` metadata exists (title, description, tags, status, kind).
@@ -51,3 +51,4 @@ CI will fail if package or registry changes are made without a changeset.
 ## Need help?
 
 Open an issue or ask in the PR.
+

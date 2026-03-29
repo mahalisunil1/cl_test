@@ -1,5 +1,5 @@
-import * as React from "react"
-import { cn } from "@components-layer/utils"
+﻿import * as React from "react"
+import { cn } from "@sunil/utils"
 {{animationImport}}
 
 {{variantTypeDecl}}
@@ -36,3 +36,4 @@ export function {{componentNamePascal}}({
     </div>
   )
 }
+

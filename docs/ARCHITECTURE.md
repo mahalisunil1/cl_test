@@ -1,6 +1,6 @@
-# Architecture & Workflow
+﻿# Architecture & Workflow
 
-This document describes the end‑to‑end engineering flow in this repo.
+This document describes the endâ€‘toâ€‘end engineering flow in this repo.
 
 ## 1) Repository Structure
 
@@ -17,11 +17,11 @@ This document describes the end‑to‑end engineering flow in this repo.
 
 ## 2) Dependency Rules
 
-- `tokens` → no dependencies
-- `utils` → owns clsx + tailwind-merge
-- `animation` → owns gsap
-- **components** → may depend only on `tokens`, `utils`, `animation`
-- **templates** → may depend only on components
+- `tokens` â†’ no dependencies
+- `utils` â†’ owns clsx + tailwind-merge
+- `animation` â†’ owns gsap
+- **components** â†’ may depend only on `tokens`, `utils`, `animation`
+- **templates** â†’ may depend only on components
 
 ## 3) Create
 
@@ -62,7 +62,7 @@ http://localhost:5173/?preview=<name>
 
 Docs uses **source** via Vite alias:
 ```
-@components-layer/* → packages/*/src
+@sunil/* -> packages/*/src
 ```
 
 ## 6) Versioning
@@ -104,7 +104,8 @@ On merge to `main`, Release workflow:
 
 Consumers install from npm:
 ```
-npm install @components-layer/card
+npm install @sunil/card
 ```
 
 Published packages use `dist/` (via `publishConfig`).
+

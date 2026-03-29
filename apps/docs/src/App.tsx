@@ -1,6 +1,6 @@
-import * as React from "react"
+﻿import * as React from "react"
 import type { ComponentType } from "react"
-import { cn } from "@components-layer/utils"
+import { cn } from "@sunil/utils"
 import { getRegistry } from "./registry"
 
 type RegistryItem = {
@@ -68,7 +68,7 @@ export default function App() {
       if (!modulePath) {
         try {
           const fallback = await import(
-            /* @vite-ignore */ `@components-layer/${selectedItem.name}`
+            /* @vite-ignore */ `@sunil/${selectedItem.name}`
           )
           const mod = fallback as Record<string, ComponentType<any>>
           const base = toPascalCase(selectedItem.name)
@@ -228,3 +228,4 @@ export default function App() {
     </div>
   )
 }
+

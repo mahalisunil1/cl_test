@@ -1,5 +1,5 @@
-{
-  "name": "@components-layer/{{packageName}}",
+﻿{
+  "name": "@sunil/{{packageName}}",
   "version": "0.0.1",
   "private": false,
   "main": "./src/index.ts",
@@ -34,8 +34,9 @@
     "tailwindcss": "^3 || ^4"
   },
   "dependencies": {
-    "@components-layer/animation": "workspace:*",
-    "@components-layer/tokens": "workspace:*",
-    "@components-layer/utils": "workspace:*"
+    "@sunil/animation": "workspace:*",
+    "@sunil/tokens": "workspace:*",
+    "@sunil/utils": "workspace:*"
   }
 }
+

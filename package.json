@@ -1,4 +1,4 @@
-{
+﻿{
   "name": "components-layer",
   "private": true,
   "version": "1.0.0",
@@ -9,9 +9,9 @@
     "create:component": "node scripts/create-component.mjs",
     "create:template": "node scripts/create-template.mjs",
     "dev:docs": "pnpm --filter docs dev",
-    "dev:packages": "pnpm -r --filter @components-layer/* build -- --watch",
-    "build:packages": "pnpm -r --filter @components-layer/* build",
-    "typecheck:packages": "pnpm -r --filter @components-layer/* exec tsc --noEmit",
+    "dev:packages": "pnpm -r --filter @sunil/* build -- --watch",
+    "build:packages": "pnpm -r --filter @sunil/* build",
+    "typecheck:packages": "pnpm -r --filter @sunil/* exec tsc --noEmit",
     "validate:registry": "node scripts/validate-registry.mjs",
     "check:changeset": "node scripts/check-changeset.mjs",
     "build:registry": "node scripts/build-registry.mjs",
@@ -34,3 +34,4 @@
     "typescript": "~5.9.3"
   }
 }
+

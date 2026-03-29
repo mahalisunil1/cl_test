@@ -1,9 +1,9 @@
-# {{componentNamePascal}}
+﻿# {{componentNamePascal}}
 
 ## Usage
 
 ```tsx
-import { {{componentNamePascal}} } from "@components-layer/{{packageName}}"
+import { {{componentNamePascal}} } from "@sunil/{{packageName}}"
 
 <{{componentNamePascal}}
   headline="Build a hero section fast."
@@ -12,3 +12,4 @@ import { {{componentNamePascal}} } from "@components-layer/{{packageName}}"
   secondaryCta="View docs"
 />
 ```
+

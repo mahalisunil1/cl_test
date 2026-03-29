@@ -1,4 +1,4 @@
-import fs from "node:fs";
+﻿import fs from "node:fs";
 import path from "node:path";
 import { execSync } from "node:child_process";
 
@@ -54,7 +54,7 @@ const replacements = {
   "{{packageName}}": name,
   "{{componentNamePascal}}": pascal,
   "{{animationImport}}": animation
-    ? 'import { gsap, createTimeline } from "@components-layer/animation"'
+    ? 'import { gsap, createTimeline } from "@sunil/animation"'
     : "",
   "{{animationBlock}}": animation
     ? `    gsap.set(localRef.current, { opacity: 0, y: 10 })
@@ -97,3 +97,4 @@ execSync(`node ${path.join("scripts", "update-registry.mjs")} --name ${name} --t
 });
 
 console.log(`Created package: ${name}`);
+

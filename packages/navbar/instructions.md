@@ -3,7 +3,7 @@
 ## Usage
 
 ```tsx
-import { Navbar } from "@components-layer/navbar"
+import { Navbar } from "@sunil/navbar"
 
 <Navbar
   brand={{ label: "Studio", href: "/" }}
@@ -28,4 +28,5 @@ import { Navbar } from "@components-layer/navbar"
   primaryCta={{ label: "Get started", href: "/start" }}
 />
 ```
+
 

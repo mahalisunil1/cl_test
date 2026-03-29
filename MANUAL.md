@@ -1,4 +1,4 @@
-# Components Layer Manual
+﻿# Components Layer Manual
 
 This document explains how the monorepo is structured, how to develop, and how to publish.
 
@@ -23,11 +23,11 @@ Dependency direction is enforced. Do not violate this.
 
 Allowed dependency rules:
 
-- `tokens` → **no dependencies**
-- `utils` → owns `clsx`, `tailwind-merge`
-- `animation` → owns `gsap`
-- `components` → depend only on `tokens`, `utils`, `animation`
-- `templates` → depend only on components
+- `tokens` â†’ **no dependencies**
+- `utils` â†’ owns `clsx`, `tailwind-merge`
+- `animation` â†’ owns `gsap`
+- `components` â†’ depend only on `tokens`, `utils`, `animation`
+- `templates` â†’ depend only on components
 
 Never add these directly inside component packages:
 
@@ -50,7 +50,7 @@ If you add new packages, you must run:
 pnpm install
 ```
 
-This refreshes workspace links so TypeScript can resolve `@components-layer/*` imports.
+This refreshes workspace links so TypeScript can resolve `@sunil/*` imports.
 
 ## 4) Docs Playground App
 
@@ -130,9 +130,9 @@ Location:
 
 Exports:
 
-- `cn()` – class merge helper using `clsx` + `tailwind-merge`
-- `mergeRefs()` – ref combiner
-- `composeHandlers()` – event handler combiner
+- `cn()` â€“ class merge helper using `clsx` + `tailwind-merge`
+- `mergeRefs()` â€“ ref combiner
+- `composeHandlers()` â€“ event handler combiner
 
 ## 9) Animation Package
 
@@ -148,7 +148,7 @@ Exports:
 - `fadeIn()`
 - `fadeOut()`
 
-Components should import from `@components-layer/animation` rather than `gsap`.
+Components should import from `@sunil/animation` rather than `gsap`.
 
 ## 10) Templates Package
 
@@ -219,7 +219,7 @@ Changesets automatically converts `workspace:*` ranges to `^version` on publish.
 
 ## 11.1) Package Scope
 
-All packages use the `@components-layer/*` scope.
+All packages use the `@sunil/*` scope.
 
 ## 15) Contribution Guidelines
 
@@ -251,7 +251,7 @@ changesets workflow.
 
 ## 17) Common Errors
 
-**Error: Cannot find module @components-layer/...**
+**Error: Cannot find module @sunil/...**
 
 Cause: workspace links not updated after adding packages.
 
@@ -277,3 +277,4 @@ When adding a new component package manually, it must:
 - live under `packages/<name>`
 - update `registry.json`
 - be importable and renderable in the docs app
+

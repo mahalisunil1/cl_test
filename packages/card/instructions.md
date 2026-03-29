@@ -3,7 +3,7 @@
 ## Usage
 
 ```tsx
-import { Card } from "@components-layer/card"
+import { Card } from "@sunil/card"
 
 <Card
   title="Monthly Budget"
@@ -18,4 +18,5 @@ import { Card } from "@components-layer/card"
   actionLabel="View More"
 />
 ```
+
 

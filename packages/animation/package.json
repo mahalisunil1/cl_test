@@ -1,5 +1,5 @@
-{
-  "name": "@components-layer/animation",
+﻿{
+  "name": "@sunil/animation",
   "version": "0.0.1",
   "private": false,
   "main": "./src/index.ts",
@@ -31,3 +31,4 @@
     "gsap": "^3.13.0"
   }
 }
+

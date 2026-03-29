@@ -1,6 +1,6 @@
 ﻿import * as React from "react"
-import { cn } from "@components-layer/utils"
-import { gsap, createTimeline } from "@components-layer/animation"
+import { cn } from "@sunil/utils"
+import { gsap, createTimeline } from "@sunil/animation"
 
 export type CardVariant = "default" | "outline"
 
@@ -109,4 +109,5 @@ export function Card({
     </div>
   )
 }
+
 

@@ -1,5 +1,5 @@
-{
-  "name": "@components-layer/{{packageName}}",
+﻿{
+  "name": "@sunil/{{packageName}}",
   "version": "0.0.1",
   "private": false,
   "main": "./src/index.ts",
@@ -35,3 +35,4 @@
   },
   "dependencies": {}
 }
+
