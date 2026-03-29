@@ -27,24 +27,24 @@ This document describes the endâ€‘toâ€‘end engineering flow in this re
 
 Component:
 ```bash
-pwsh scripts/create-component.ps1 -Name <kebab-name> -Type component -Variants -Animation
+node scripts/create-component.mjs --name <kebab-name> --type component --variants --animation
 ```
 
 Template:
 ```bash
-pwsh scripts/create-template.ps1 -Name <kebab-name>
+node scripts/create-template.mjs --name <kebab-name>
 ```
 
 ## 4) Registry
 
 Update `registry.json` metadata:
 ```json
-"card": {
-  "title": "finance-card",
-  "description": "Compact budget summary card with progress and CTA.",
-  "author": { "name": "sunil" },
-  "tags": ["finance", "budget", "card", "progress", "cta"],
-  "status": "stable",
+"<component-name>": {
+  "title": "My Component",
+  "description": "Short summary of the component.",
+  "author": { "name": "your-name" },
+  "tags": ["tag-1", "tag-2"],
+  "status": "draft",
   "kind": "component"
 }
 ```
@@ -96,7 +96,7 @@ On PR:
 ## 9) Release
 
 On merge to `main`, Release workflow:
-- `pnpm version` (bump versions)
+- `pnpm changeset version` (bump versions)
 - `pnpm release` (publish to npm)
 - upload registry artifact
 
@@ -104,7 +104,7 @@ On merge to `main`, Release workflow:
 
 Consumers install from npm:
 ```
-npm install @mahalisunil1/card
+npm install @mahalisunil1/<package>
 ```
 
 Published packages use `dist/` (via `publishConfig`).

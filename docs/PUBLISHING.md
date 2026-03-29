@@ -12,7 +12,7 @@ This repo uses Changesets + GitHub Actions to publish packages to npm.
 
 Each package under `packages/*` must have:
 
-- `name`: scoped package name (e.g. `@mahalisunil1/card`)
+- `name`: scoped package name (e.g. `@mahalisunil1/example-component`)
 - `version`
 - `private: false`
 - `publishConfig.access: "public"`
@@ -35,13 +35,13 @@ Core packages:
 2. Commit the changeset
 3. Push/merge to `main`
 4. Release workflow runs:
-   - `pnpm version`
+   - `pnpm changeset version`
    - `pnpm release`
 
 ## 4) Verify publish
 
 ```bash
-npm view @mahalisunil1/card
+npm view @mahalisunil1/<package>
 ```
 
 ## 5) Optional local checks

@@ -12,7 +12,7 @@ Top-level structure:
 - `packages/tokens`: design tokens (no dependencies)
 - `packages/utils`: shared helpers (`clsx`, `tailwind-merge`)
 - `packages/animation`: GSAP abstraction (components must not import `gsap` directly)
-- `packages/*`: component packages (e.g. `button`, `card`)
+- `packages/*`: component packages (e.g. `button`, `example-component`)
 - `packages/templates`: template layer (depends on components only) (optional)
 - `.changeset/`: changesets release pipeline
 - `registry.json`: component registry metadata
@@ -74,7 +74,7 @@ Config: `apps/docs/tailwind.config.ts`
 ### Create a Component
 
 ```bash
-node scripts/create-component.mjs --name card --type component --variants --animation
+node scripts/create-component.mjs --name example-component --type component --variants --animation
 ```
 
 ### Create a Template
@@ -170,7 +170,7 @@ pnpm changeset
 ### Version
 
 ```bash
-pnpm version
+pnpm changeset version
 ```
 
 ### Publish
@@ -212,7 +212,7 @@ Recommended automation flow:
 1. Developer creates a changeset: `pnpm changeset`
 2. CI runs build + typecheck + docs build
 3. On merge to `main`, a release workflow runs:
-   - `pnpm version` (creates version bump PR or commit)
+   - `pnpm changeset version` (creates version bump PR or commit)
    - `pnpm release` (publishes to npm)
 
 Changesets automatically converts `workspace:*` ranges to `^version` on publish.
@@ -236,7 +236,7 @@ pnpm switch:scope -- --from @mahalisunil1 --to @components-layer --dry
 
 ## 15) Contribution Guidelines
 
-1. Use `scripts/create-component.ps1` for new components.
+1. Use `scripts/create-component.mjs` for new components.
 2. Do not add forbidden dependencies to component packages.
 3. Keep component packages small and focused.
 4. Add a changeset for any published package change.

@@ -5,9 +5,8 @@ This repo uses a minimal script-based scaffolder. Use these workflows + scripts.
 ## 1) Create a Component Package (Manual Workflow)
 
 **Inputs**
-- `name`: kebab-case (e.g., `card`)
-- `type`: `component` | `template`
-- `tier`: `free` | `pro`
+- `name`: kebab-case (e.g., `example-component`)
+- `type`: `component`
 - `variants`: `true` | `false`
 - `animation`: `true` | `false`
 
@@ -15,7 +14,7 @@ This repo uses a minimal script-based scaffolder. Use these workflows + scripts.
 1. Run the scaffold script:
 
 ```bash
-node scripts/create-component.mjs --name card --type component --variants --animation
+node scripts/create-component.mjs --name example-component --type component --variants --animation
 ```
 
 2. Install package deps (if needed):
@@ -29,7 +28,7 @@ pnpm install
 
 ```bash
 pnpm dev:docs
-# open http://localhost:5173/?preview=card
+# open http://localhost:5173/?preview=example-component
 ```
 
 ## 2) Update Registry (Manual)
@@ -37,7 +36,7 @@ pnpm dev:docs
 If you need to fix registry manually:
 
 ```bash
-pwsh scripts/update-registry.ps1 -Name card -Type component -Tier free
+node scripts/update-registry.mjs --name example-component --type component
 ```
 
 ## 3) Preview Flow

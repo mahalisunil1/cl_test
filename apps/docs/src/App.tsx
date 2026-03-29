@@ -113,6 +113,31 @@ export default function App() {
     setSelected(name)
   }
 
+  if (items.length === 0) {
+    return (
+      <div className="min-h-screen bg-[var(--cl-color-background)] p-10 text-[var(--cl-color-foreground)]">
+        <div className="mx-auto max-w-3xl space-y-6 text-white/80">
+          <div className="text-sm uppercase tracking-widest text-white/60">
+            Components Layer
+          </div>
+          <h1 className="text-3xl font-semibold text-white">
+            Live Preview
+          </h1>
+          <div className="rounded-3xl border border-white/10 bg-white/5 p-8">
+            <div className="text-lg font-semibold text-white">
+              No components yet
+            </div>
+            <p className="mt-2 text-sm text-white/70">
+              Add a component with{" "}
+              <span className="font-mono">pnpm create:component</span> and
+              update <span className="font-mono">registry.json</span>.
+            </p>
+          </div>
+        </div>
+      </div>
+    )
+  }
+
   return (
     <div className="min-h-screen bg-[var(--cl-color-background)] p-10 text-[var(--cl-color-foreground)]">
       <div className="mx-auto max-w-6xl space-y-10">
