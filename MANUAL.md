@@ -221,6 +221,19 @@ Changesets automatically converts `workspace:*` ranges to `^version` on publish.
 
 All packages use the `@sunil/*` scope.
 
+If you later move to an org scope (e.g. `@components-layer/*`), use the
+scope switch helper script:
+
+```bash
+pnpm switch:scope -- --from @sunil --to @components-layer
+```
+
+Dry run:
+
+```bash
+pnpm switch:scope -- --from @sunil --to @components-layer --dry
+```
+
 ## 15) Contribution Guidelines
 
 1. Use `scripts/create-component.ps1` for new components.
