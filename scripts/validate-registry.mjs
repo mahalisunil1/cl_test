@@ -9,7 +9,11 @@ if (!fs.existsSync(registryPath)) {
   process.exit(1);
 }
 
-const registry = JSON.parse(fs.readFileSync(registryPath, "utf8"));
+let raw = fs.readFileSync(registryPath, "utf8");
+if (raw.charCodeAt(0) === 0xfeff) {
+  raw = raw.slice(1);
+}
+const registry = JSON.parse(raw);
 const meta = registry.meta ?? {};
 
 const missing = [];
