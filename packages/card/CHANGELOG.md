@@ -1,5 +1,11 @@
 # @mahalisunil1/card
 
+## 0.0.3
+
+### Patch Changes
+
+- a64f556: Publish dist entrypoints for card.
+
 ## 0.0.2
 
 ### Patch Changes
