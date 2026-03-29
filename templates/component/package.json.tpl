@@ -1,24 +1,13 @@
-﻿{
-  "name": "@sunil/{{packageName}}",
+{
+  "name": "@mahalisunil1/{{name}}",
   "version": "0.0.1",
   "private": false,
-  "main": "./src/index.ts",
-  "types": "./src/index.ts",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
   "exports": {
     ".": {
-      "types": "./src/index.ts",
-      "default": "./src/index.ts"
-    }
-  },
-  "publishConfig": {
-    "access": "public",
-    "main": "./dist/index.js",
-    "types": "./dist/index.d.ts",
-    "exports": {
-      ".": {
-        "types": "./dist/index.d.ts",
-        "default": "./dist/index.js"
-      }
+      "types": "./dist/index.d.ts",
+      "default": "./dist/index.js"
     }
   },
   "files": [
@@ -34,9 +23,11 @@
     "tailwindcss": "^3 || ^4"
   },
   "dependencies": {
-    "@sunil/animation": "workspace:*",
-    "@sunil/tokens": "workspace:*",
-    "@sunil/utils": "workspace:*"
+    "@mahalisunil1/animation": "workspace:*",
+    "@mahalisunil1/tokens": "workspace:*",
+    "@mahalisunil1/utils": "workspace:*"
+  },
+  "publishConfig": {
+    "access": "public"
   }
 }
-
