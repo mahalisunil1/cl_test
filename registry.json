@@ -1,7 +1,5 @@
 {
-  "components": [
-    "card"
-  ],
+  "components": [],
   "templates": [],
   "tokens": [
     "tokens"
@@ -9,22 +7,5 @@
   "utils": [
     "utils"
   ],
-  "meta": {
-    "card": {
-      "title": "Checking balance card",
-      "description": "Minimal banking balance card with quick actions.",
-      "author": {
-        "name": "sunil"
-      },
-      "tags": [
-        "finance",
-        "banking",
-        "card",
-        "balance",
-        "actions"
-      ],
-      "status": "stable",
-      "kind": "component"
-    }
-  }
+  "meta": {}
 }
