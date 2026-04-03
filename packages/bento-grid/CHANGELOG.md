@@ -1,5 +1,15 @@
 # @mahalisunil1/bento-grid
 
+## 0.1.1
+
+### Patch Changes
+
+- dd4ec2f: Fixing 403 Forbidden error by upgrading to a 0.1.1 release and fresh token permissions.
+- Updated dependencies [dd4ec2f]
+  - @mahalisunil1/tokens@0.1.1
+  - @mahalisunil1/animation@0.1.1
+  - @mahalisunil1/utils@0.1.1
+
 ## 0.1.0
 
 ### Minor Changes
