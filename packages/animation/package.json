@@ -19,7 +19,10 @@
     "dev": "tsup --watch",
     "typecheck": "tsc --noEmit"
   },
-  "dependencies": {
+  "peerDependencies": {
+    "gsap": "^3.13.0"
+  },
+  "devDependencies": {
     "gsap": "^3.13.0"
   },
   "publishConfig": {
