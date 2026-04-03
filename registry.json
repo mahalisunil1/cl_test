@@ -1,6 +1,6 @@
 {
   "components": [
-    "card"
+    "bento-grid"
   ],
   "templates": [],
   "tokens": [
@@ -10,20 +10,14 @@
     "utils"
   ],
   "meta": {
-    "card": {
-      "title": "Profile stats card",
-      "description": "Soft profile card with tags, stats, and CTA.",
+    "bento-grid": {
+      "title": "Bento Grid",
+      "description": "",
       "author": {
-        "name": "sunil"
+        "name": "unknown"
       },
-      "tags": [
-        "profile",
-        "card",
-        "stats",
-        "cta",
-        "ui"
-      ],
-      "status": "stable",
+      "tags": [],
+      "status": "draft",
       "kind": "component"
     }
   }

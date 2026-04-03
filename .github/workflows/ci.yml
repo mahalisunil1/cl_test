@@ -1,52 +1,83 @@
 name: CI
 
 on:
-  pull_request:
   push:
-    branches: [main]
+    branches: ["main"]
+  pull_request:
+    branches: ["main"]
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
 
 jobs:
-  build:
+  build-and-test:
+    name: Build & Validate
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout
+      - name: Checkout Repository
         uses: actions/checkout@v4
 
-      - name: Setup pnpm
-        uses: pnpm/action-setup@v4
+      - name: Install pnpm
+        uses: pnpm/action-setup@v3
         with:
-          version: 10.32.1
+          version: 9
 
-      - name: Setup Node
+      - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
           node-version: 20
-          cache: pnpm
+          cache: 'pnpm'
 
-      - name: Install
-        run: pnpm install
+      - name: Install Dependencies
+        run: pnpm install --frozen-lockfile
 
-      - name: Check changeset (PR only)
-        if: github.event_name == 'pull_request'
-        run: pnpm check:changeset
-
-      - name: Build packages
-        run: pnpm build:packages
-
-      - name: Typecheck packages
-        run: pnpm typecheck:packages
-
-      - name: Validate registry metadata
-        run: pnpm validate:registry
-
-      - name: Build docs
-        run: pnpm --filter docs build
-
-      - name: Build registry artifact
-        run: pnpm build:registry
-
-      - name: Upload registry artifact
-        uses: actions/upload-artifact@v4
+      - name: Turborepo Cache
+        uses: actions/cache@v4
         with:
-          name: registry
-          path: dist/registry.json
+          path: .turbo
+          key: turbo-${{ github.job }}-${{ github.ref_name }}-${{ github.sha }}
+          restore-keys: |
+            turbo-${{ github.job }}-${{ github.ref_name }}-
+
+      - name: Run Validations
+        run: pnpm turbo run build typecheck
+
+  release:
+    name: Release to NPM
+    needs: build-and-test
+    # Only run the release job if this is a push to main (not a PR)
+    if: github.repository == 'mahalisunil1/cl_test' && github.event_name == 'push' && github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Install pnpm
+        uses: pnpm/action-setup@v3
+        with:
+          version: 9
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: 'pnpm'
+          registry-url: 'https://registry.npmjs.org'
+
+      - name: Install Dependencies
+        run: pnpm install --frozen-lockfile
+
+      - name: Create Release Pull Request or Publish to npm
+        id: changesets
+        uses: changesets/action@v1
+        with:
+          # This command ensures changesets bumps versions and commits the changelog
+          version: pnpm changeset version
+          # This command builds packages and runs `pnpm publish`
+          publish: pnpm release
+          commit: "chore(release): version packages"
+          title: "chore(release): version packages"
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}

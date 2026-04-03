@@ -9,9 +9,10 @@
     "create:component": "node scripts/create-component.mjs",
     "create:template": "node scripts/create-template.mjs",
     "dev:docs": "pnpm --filter docs dev",
-    "dev:packages": "pnpm -r --filter @mahalisunil1/* build -- --watch",
-    "build:packages": "pnpm -r --filter @mahalisunil1/* build",
-    "typecheck:packages": "pnpm -r --filter @mahalisunil1/* exec tsc --noEmit",
+    "dev:packages": "turbo run dev --filter=\"@mahalisunil1/*\"",
+    "dev": "turbo run dev",
+    "build:packages": "turbo run build --filter=\"@mahalisunil1/*\"",
+    "typecheck:packages": "turbo run typecheck --filter=\"@mahalisunil1/*\"",
     "validate:registry": "node scripts/validate-registry.mjs",
     "check:changeset": "node scripts/check-changeset.mjs",
     "build:registry": "node scripts/build-registry.mjs",
@@ -20,7 +21,7 @@
     "changeset": "changeset",
     "version": "changeset version",
     "release": "changeset publish",
-    "lint": "pnpm --filter docs lint"
+    "lint": "turbo run lint"
   },
   "keywords": [],
   "author": "",
@@ -32,7 +33,7 @@
     "@types/react-dom": "^19.2.3",
     "tsup": "^8.5.1",
     "tsx": "^4.21.0",
+    "turbo": "^2.9.3",
     "typescript": "~5.9.3"
   }
 }
-

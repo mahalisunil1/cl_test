@@ -1,6 +1,6 @@
 {
-  "name": "@mahalisunil1/card",
-  "version": "0.0.2",
+  "name": "@mahalisunil1/bento-grid",
+  "version": "0.0.1",
   "private": false,
   "main": "./dist/index.mjs",
   "types": "./dist/index.d.mts",
@@ -15,7 +15,9 @@
     "src"
   ],
   "scripts": {
-    "build": "tsup"
+    "build": "tsup",
+    "dev": "tsup --watch",
+    "typecheck": "tsc --noEmit"
   },
   "peerDependencies": {
     "react": "^18 || ^19",
