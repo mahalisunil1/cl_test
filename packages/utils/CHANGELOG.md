@@ -1,5 +1,11 @@
 # @mahalisunil1/utils
 
+## 0.1.0
+
+### Minor Changes
+
+- 74d280c: Initial release of the encapsulated Bento Grid architecture and CI/CD pipelines.
+
 ## 0.0.4
 
 ### Patch Changes
