@@ -12,12 +12,12 @@
   "meta": {
     "bento-grid": {
       "title": "Bento Grid",
-      "description": "",
+      "description": "High-complexity, state-of-the-art bento grid with GSAP-powered physics and async data encapsulation.",
       "author": {
-        "name": "unknown"
+        "name": "mahalisunil1"
       },
-      "tags": [],
-      "status": "draft",
+      "tags": ["gsap", "physics", "bento", "async"],
+      "status": "ready",
       "kind": "component"
     }
   }
