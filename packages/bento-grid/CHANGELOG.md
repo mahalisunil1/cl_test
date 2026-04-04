@@ -1,5 +1,13 @@
 # @mahalisunil1/bento-grid
 
+## 0.1.2
+
+### Patch Changes
+
+- 4b67cbe: Architectural fix: Moved GSAP to peerDependencies to prevent version conflicts when used alongside other GSAP libraries (like GSAP 2.x).
+- Updated dependencies [4b67cbe]
+  - @mahalisunil1/animation@0.1.2
+
 ## 0.1.1
 
 ### Patch Changes
