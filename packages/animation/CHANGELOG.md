@@ -1,5 +1,11 @@
 # @mahalisunil1/animation
 
+## 0.1.1
+
+### Patch Changes
+
+- dd4ec2f: Fixing 403 Forbidden error by upgrading to a 0.1.1 release and fresh token permissions.
+
 ## 0.1.0
 
 ### Minor Changes
