@@ -1,5 +1,11 @@
 # @mahalisunil1/tokens
 
+## 0.1.2
+
+### Patch Changes
+
+- fcb00cd: Synchronizing all packages for version 0.1.3/0.1.2.
+
 ## 0.1.1
 
 ### Patch Changes
